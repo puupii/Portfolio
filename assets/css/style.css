@@ -2,9 +2,11 @@
 
 /* Global variables */
 :root {
-  --primary: #12bdff;
-  --primary-hover: #0c8ec2;
-  --dark-primary: #1b1f24;
+  --primary: #9ffcac;
+  --primary-hover: #35e432;
+  --dark-primary: #2d160b;
+  --dark-secondary: #3e3222;
+  --text-color: #c4c4c4;
 }
 
 * {
@@ -34,6 +36,10 @@ header {
   justify-content: space-around;
   align-items: center;
   z-index: 1;
+}
+
+header div > a {
+  text-decoration: none;
 }
 
 header .logo {
@@ -82,7 +88,7 @@ section.hero-section {
 }
 
 .hero-section__desc {
-  color: #c4c4c4;
+  color: var(--text-color);
 }
 
 .hero-img img {
@@ -158,16 +164,16 @@ ul.social-icons {
 .btn-dark-outlined:hover {
   cursor: pointer;
   background-color: var(--primary);
-  color: #fff !important;
+  color: #fff;
   transition: all 0.3s ease 0s;
 }
 
 /* About Section */
 section.about-section {
-  background-color: #22282f;
+  background-color: var(--dark-secondary);
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   padding: 60px;
 }
@@ -178,10 +184,19 @@ section.about-section {
   padding: 2px;
   border-radius: 50%;
   border: 3px solid var(--primary);
-  box-shadow: 3px 5px 30px #03506e;
+  box-shadow: 3px 5px 30px #613026;
   object-fit: cover;
 }
 
+.about-img-big img {
+  width: 450px;
+  height: 350px;
+  padding: 2px;
+  border-radius: 10%;
+  border: 3px solid var(--primary);
+  box-shadow: 3px 5px 30px #613026;
+  object-fit: cover;
+}
 .about-content {
   margin-left: 100px;
   max-width: 600px;
@@ -196,7 +211,7 @@ section.about-section {
 }
 
 .about-content p {
-  color: #c4c4c4;
+  color: var(--text-color);
   font-size: 15px;
 }
 
@@ -234,13 +249,13 @@ section.projects-section {
   width: 33.33%;
   margin: 35px 10px;
   padding: 33px;
-  background-color: #22282f;
+  background-color: var(--dark-secondary);
   border-radius: 5px;
   transition: all 0.5s ease 0s;
 }
 
 .projects-card-box:hover {
-  box-shadow: 3px 5px 20px #03506e;
+  box-shadow: 3px 5px 20px #613026;
   transition: all 0.5s ease 0s;
   transform: translateY(-2px);
 }
@@ -265,7 +280,7 @@ section.projects-section {
 
 .projects-card-box__desc p {
   font-size: 14px;
-  color: #c4c4c4;
+  color: var(--text-color);
 }
 
 .projects-card-box__buttons {
@@ -276,7 +291,7 @@ section.projects-section {
 }
 
 .projects-card-box__buttons button {
-  background-color: #22282f;
+  background-color: var(--dark-secondary);
 }
 
 .projects-card-box__buttons button > a {
@@ -287,7 +302,7 @@ section.projects-section {
 
 /* Contact Section */
 section.contact-section {
-  background-color: #22282f;
+  background-color: var(--dark-secondary);
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -304,7 +319,7 @@ section.contact-section {
 
 .contact-section form div > input,
 textarea {
-  background-color: #c4c4c4;
+  background-color: var(--text-color);
   width: 300px;
   padding: 5px 8px;
   margin-bottom: 10px;
@@ -330,7 +345,7 @@ textarea:focus {
 
 .contact__github button {
   padding: 10px 44px;
-  background-color: #171515;
+  background: #171515;
   font-size: 14px;
 }
 
@@ -374,14 +389,14 @@ footer a {
 }
 
 .footer__theme1 {
-  color: var(--primary);
+  color: #12bdff;
   background-color: transparent;
-  border: 1px solid var(--primary);
+  border: 1px solid #12bdff;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme1:hover {
-  background-color: var(--primary);
+  background-color: #12bdff;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
@@ -413,7 +428,7 @@ footer a {
 }
 
 .active-theme {
-  background-color: #12bdff;
+  background-color: #ff5555;
   color: white;
 }
 
