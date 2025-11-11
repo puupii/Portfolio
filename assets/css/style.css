@@ -76,7 +76,8 @@ section.hero-section {
   background-color: var(--dark-primary);
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: top;
+  justify-content: center;
   padding: 100px 120px 50px 200px;
 }
 
